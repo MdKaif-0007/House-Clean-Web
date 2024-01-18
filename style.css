@@ -103,6 +103,8 @@ body {
 
 
 
+
+
 /* Media Query for Mobile */
 
 @media only screen and (max-width: 780px) {
@@ -155,7 +157,24 @@ body {
       margin-bottom: 10px;
   }
 
+  .about-us-list ul{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    right: 9rem;
+    align-items: start;
+    background-color: #ffffff96;
+    border-radius: 10px;
+  }
+  .about-us-list li{
+    display: none;
+  }
 
+  .about-us-list li.active{
+    display: block;
+  }
+  
 
   }
 
@@ -196,22 +215,7 @@ body {
 }
 
 
-/* making hover on contact us list */
 
-.contact-number p{
-  position: absolute;
-  padding: 20px 0;
-  font-size: 25px;
-  background-color: #ffffff96;
-  border-radius: 10px;
-}
-
-.contact-number{
-  display: none;
-}
-.contact-number.active{
-  display: block;
-}
 
 
 

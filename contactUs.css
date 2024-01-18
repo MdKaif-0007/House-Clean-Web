@@ -1,32 +1,57 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .head-para{
-  padding-bottom: 40px;
-  line-height: 30px;
-  font-size: 20px;
+    text-align: center;
 }
 
-#heading{
-  padding: 20px 20px;
-  background-color: rgba(48, 170, 170, 0.445);
+h1{
+    padding: 20px 0;
+    background-color:  rgba(48, 170, 170, 0.445);
+    font-size: 40px;
 }
 
-
-#list{
-  padding: 20px 0;
-  padding-left: 30px;
-  list-style-type: none;
+strong h3{
+    padding: 4rem 15rem;
 }
 
-#list strong h2{
-  padding: 20px 0;
+#calendar{
+    font-size: 4rem;
+    padding: 2rem 0;
 }
+
+strong p{
+    padding-bottom: 2rem;
+}
+
+#rafe-btn{
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color:  #6a8e8f;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.call{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+.call p{
+    padding: 0 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#phone{
+    font-size: 2rem;
+}
+
 
 
 

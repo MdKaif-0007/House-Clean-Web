@@ -4,8 +4,8 @@ const navList = document.querySelector(".nav-list");
 const aboutUs = document.querySelector("#about-us");
 const aboutUsList = document.querySelector(".about-us-list");
 
-const contactUs = document.querySelector("#contact-us");
-const contactNumber = document.querySelector(".contact-number");
+const aboutUsListMq = document.querySelectorAll(".about-us-list li");
+
 
 
 //menu bar button
@@ -29,11 +29,34 @@ aboutUs.addEventListener("mouseout", () => {
 });
 
 
-//contact us
-
-contactUs.addEventListener("click", () => {
-    contactNumber.classList.toggle("active");
-})
 
 
 
+//mediaquery max-width 780px about us button
+
+aboutUs.addEventListener("click", () => {
+    if(window.innerWidth < 780){
+        aboutUsListMq.forEach(list => {
+            list.classList.toggle("active");
+        });
+
+    }
+});
+
+aboutUs.addEventListener("mouseover", () => {
+    if(window.innerWidth < 780){
+        if(aboutUs){
+            aboutUsList.style.display = "none";
+        }
+        if(aboutUs){
+            aboutUsList.style.display = "block";
+        }
+    }
+});
+aboutUs.addEventListener("mouseout", () => {
+    if(window.innerWidth < 780){
+        if(aboutUs){
+            aboutUsList.style.display = "block";
+        }
+    }
+});
